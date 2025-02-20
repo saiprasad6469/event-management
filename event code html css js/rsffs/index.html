@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Siddhartha Institude Of technology</h2>
+        <form class="registration-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="College Email ID" required>
+            <input type="email" placeholder="Personal Email ID" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <button type="button" onclick="generateID()">Generate ID</button>
+        </form>
+
+        <div class="student-id">
+            <p><strong>Student ID:</strong> <span id="studentID"></span></p>
+            <button class="download-btn" onclick="downloadID()">Download ID</button>
+            <button class="close-btn" onclick="closeForm()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

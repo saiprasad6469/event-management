@@ -1,0 +1,273 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f6f3a2; /* Light background for body */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #61d0ffb0; /* Vibrant red background */
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+}
+
+.logo {
+    width: 1600px;
+    height: 100px;
+    
+}
+
+.college-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+.menu-container {
+    position: relative;
+}
+
+.menu-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    top: 100px;
+    left: 5px;
+    z-index: 5;
+    border-radius: 10px;
+    
+}
+
+.sidebar {
+    width: 150px;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    top: 60;
+    left: -220px;
+    transition: left 0.3s ease;
+    padding-top: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    padding: 20px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.sidebar ul li:hover {
+    background-color: #444;
+}
+nav {
+    background-color: #141313; /* Bright orange background */
+    text-align: right;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: rgb(244, 241, 241);
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #ddd;
+    
+}
+
+/* Optional: Style for icons */
+.nav-links li a i {
+    margin-right: 8px;
+}
+
+
+/* Carousel */
+.carousel {
+    width: 95%;
+    overflow: hidden;
+    margin-right: 80vh;
+    height: 80vh;
+    display: flex;
+}
+
+.carousel-container {
+    width: 100%;
+   
+    transition: transform 0.5s ease-in-out;
+    height: 85vh;
+   
+}
+
+.carousel-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Events Section 
+.events {
+    padding: 40px 20px;
+    text-align: center;
+    background: #25604aa8; /* Purple background for events section */
+}
+
+/*.events h3 {
+    margin-bottom: 30px;
+    color: #ffffff; /* White text color */
+}
+
+/*.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.event-card {
+    background: #ffffff;  White background for cards */
+    /*width: 300px;
+    border: 2px solid #1e3a8a;  .Blue border. 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-card h3 {
+    margin-bottom: 10px;
+    color: #04b347;  .Blue text color. 
+}
+
+.event-card p {
+    color: #555;
+}
+.container {
+    padding: 50px;
+    text-align: center;
+    background: #25604aa8;
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background: #25604aa8;
+    
+  }
+  */
+  
+
+/* Registration Form
+.register {
+    padding: 40px 20px;
+    text-align: center;
+    background: #25604aa8; Yellow-orange background for registration 
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.registration-form input,
+.registration-form select {
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+*/
+#registrationMessage {
+    margin-top: 25px;
+    color: green;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.social-icons {
+    margin-top: 5px;
+   
+}
+
+.social-link {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    color: #1e3a8a; /* Blue color on hover */
+    transform: translateY(-5px);
+}

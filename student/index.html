@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student & Faculty Portal</title>
+    
+    
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling with a beautiful background image */
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            background: url('studente\ image.jpeg') no-repeat center center/cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+        }
+
+        nav .logo {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #f39c12;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        nav .logo:hover {
+            transform: scale(1.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content Sections */
+        .section {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+            backdrop-filter: blur(5px);
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.6);
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+            width: 300px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h2 {
+            margin-bottom: 20px;
+            color: #f5a623;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+
+        .card p {
+            margin-bottom: 30px;
+            font-size: 1em;
+            color: #ddd;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(135deg, #f5a623, #e74c3c);
+            padding: 12px 25px;
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+            font-size: 1em;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, #e74c3c, #f5a623);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.7);
+            font-size: 0.9em;
+            color: #ddd;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 700px) {
+            .section {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="logo">Event System</div>
+        <ul>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Student Section -->
+    <section class="section" id="students">
+        <div class="card">
+            <h2>Student Portal</h2>
+            <p>Access your events, track your participation, and register for upcoming sessions.</p>
+            <a href="#student-registration" class="btn" onclick="handleLinkClick('Student Registration')">Go to Students</a>
+        </div>
+
+        <div class="card">
+            <h2>Upcoming Events</h2>
+            <p>Stay updated with the latest events and activities happening around you.</p>
+            <a href="#student-events" class="btn" onclick="handleLinkClick('Student Events')">View Events</a>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="section" id="faculty">
+        <div class="card">
+            <h2>Faculty Portal</h2>
+            <p>Manage event participation, track student involvement, and create new events.</p>
+            <a href="#faculty-dashboard" class="btn" onclick="handleLinkClick('Faculty Dashboard')">Go to Faculty</a>
+        </div>
+
+        <div class="card">
+            <h2>Manage Events</h2>
+            <p>Create, update, and manage events efficiently with our streamlined tools.</p>
+            <a href="#faculty-events" class="btn" onclick="handleLinkClick('Faculty Events')">Manage Events</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Event Registration System. All rights reserved.
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function handleLinkClick(section) {
+            alert(You clicked on the ${section} link.);
+        }
+    </script>
+</body>
+</html>

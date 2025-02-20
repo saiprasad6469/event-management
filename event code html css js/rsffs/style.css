@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(109, 79, 79) center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.registration-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.registration-form button:hover {
+    background-color: #45a049;
+}
+
+.student-id {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.student-id p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.download-btn, .close-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn {
+    background-color: #2196F3;
+}
+
+.download-btn:hover {
+    background-color: #1976D2;
+}
+
+.close-btn {
+    background-color: #F44336;
+}
+
+.close-btn:hover {
+    background-color: #D32F2F;
+}
